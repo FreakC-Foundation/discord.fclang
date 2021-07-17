@@ -1,0 +1,22 @@
+freakc init --compile
+
+if_not_exist[] Config create_dir[] Config
+
+copy[] "config.bat" "./Config">nul
+copy[] "commands.bat" "./Config">nul
+
+del[] /q config.bat
+del[] /q commands.bat
+del[] /q init.bat
+
+Config/config.bat[..]
+
+if_not_exist[] TEMP create_dir[] TEMP
+print[] %bot.token%>TEMP\bot.token.dat
+
+change_dir[] Runtime
+freakc s --compile
+freakc eventManager --compile
+open[] discord.bat.exe.exe
+
+quit[] /b

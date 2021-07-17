@@ -1,0 +1,25 @@
+function[] config
+	:: Bot Config
+	var[] bot.token=Your_bot_token
+	var[] bot.prefix=tbot 
+
+	:: Event Config
+	var[] events.message.notification=true
+endfunc[]
+
+function[] commands
+	if[] %1 NEQ "" call[] :%~1 2>nul
+	quit[] /b
+
+	label[] help
+	call[] s.bat dmAuthor "tbot help/ping/hello"
+	goto[] :eof
+	
+	label[] ping
+	call[] s.bat sendMessage "pong"
+	goto[] :eof
+	
+	label[] hello
+	call[] s.bat sendMessage "Hello there!"
+	goto[] :eof
+endfunc[]

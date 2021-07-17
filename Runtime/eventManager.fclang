@@ -1,0 +1,25 @@
+import[] string
+
+enb_delay[]
+..\Config\config.bat[..]
+trigger %1 %2[::]
+goto[] exit
+
+label[] trigger
+if[] %~1 == message call[] :message "%~2"
+goto[] :eof
+
+label[] message
+if[] %events.message.notification% == true print[] Received Message: %~1
+
+var[] firstChar=%~1
+var[] messageContent=%~1
+string_length[] "len" "%bot.prefix%"
+var[] firstChar=^!firstChar:~0,%len%^!
+if[] "^!firstChar^!" NEQ "%bot.prefix%" goto[] :eof
+
+var[] messageContent=^!messageContent:~%len%^!
+..\Config\commands.bat[..] "%messageContent%"
+goto[] :eof
+
+label[] exit
