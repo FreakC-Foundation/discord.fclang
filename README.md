@@ -7,7 +7,7 @@ Because I'm an idiot who found [discord.bat](https://github.com/mininmobile/disc
 ## [How to use?](Tutorial.md)
 
 ## Support me lol!
-If you love FreakC (or me), please leave a star at [the FreakC's language repo](https://github.com/FreakC-Foundation/FreakC), you can abandon this repo :v
+If you love FreakC (or me), please leave a star at [the FreakC's language repo](https://github.com/FreakC-Foundation/FreakC) and this repo too.
 
 ## License and Copyrights
 Copyrights © 2021 Nguyen Phu Minh
