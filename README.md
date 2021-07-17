@@ -14,6 +14,4 @@ Copyrights © 2021 Nguyen Phu Minh
 
 This project is licensed under the MIT license
 
-You can copy the source code and make it yours, since basically this is a clone of [discord.bat](https://github.com/mininmobile/discord.bat).
-
-Consider checking out the discord.bat too.
+You can copy the source code and make it yours, since basically this is a clone of [discord.bat](https://github.com/mininmobile/discord.bat), consider checking out discord.bat too.
