@@ -2,7 +2,7 @@ import[] string
 
 enb_delay[]
 ..\Config\config.bat[..]
-trigger %1 %2[::]
+trigger[::] %1 %2
 goto[] exit
 
 label[] trigger
